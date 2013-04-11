@@ -1,0 +1,4 @@
+JSONtyping
+==========
+
+json, typisation
