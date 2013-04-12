@@ -3,12 +3,13 @@ JSONtyping
 
 Функция заменяет зачение свойств обхекта JSON-a на их типы:
 
-Исходный JSON:
+**Исходный JSON:**
 ```javascript
-{"testString": "bla-bla-bla", "testObj": {"testArray":["this", "is", "text"], "emptyObj":{}, "emptyArray":[]}, "thisNumber":123, "isBoolean":false}
+{"testString": "bla-bla-bla", "testObj": {"testArray":["this", "is", "text"],
+ "emptyObj":{}, "emptyArray":[]}, "thisNumber":123, "isBoolean":false}
 ```
 
-Результат:
+**Результат:**
 ```javascript
 {
     "testString": "string",
@@ -23,5 +24,10 @@ JSONtyping
     "boolean": "boolean"
 }
 ```
+
+TODO:
+- [ ] Добавить в npm
+- [ ] Сделать вариант функции без графической обертки
+- [ ] Сделать возможность загружать JSON по ссылке
 
 json, typisation
