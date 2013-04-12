@@ -2,33 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-	<script src="./index.js"></script>
 	<title>jsonTypeisation</title>
 </head>
 <body>
 	<h3>JSON:</h3>
 	<textarea id="input" style="width: 100%; margin-bottom: 20px; min-height: 300px;" ></textarea>
+	<button>Start</button>
 	
 	<h3>Result:</h3>
 	<textarea id="output" style="width: 100%; min-height: 300px; border: 1px solid;" ></textarea>
+	<script src="./index.js"></script>
 </body>
-
-<script>
-	var input = document.getElementById('input').value
-	  , output = document.getElementById('output')
-	  , body = document.getElementsByTagName('body')[0]
-	
-	$('body').keydown(run);
-
-	function run(e){
-		if (e.keyCode === 13) {
-			input = document.getElementById('input').value;
-			input = JSON.parse( input );
-			output.innerHTML = JSON.stringify( jsonTypeisation(input, 3) );
-			return false;
-		}
-	}
-
-</script>
 </html>
