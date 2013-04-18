@@ -21,7 +21,7 @@ JSONtyping
         "emptyArray": "object"
     },
     "thisNumber": "number",
-    "boolean": "boolean"
+    "isBoolean": "boolean"
 }
 ```
 
