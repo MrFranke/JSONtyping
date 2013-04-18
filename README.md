@@ -25,9 +25,17 @@ JSONtyping
 }
 ```
 
+**Использование в nodejs:**
+```javascript
+var jsonT = require('json-typping');
+var json = {"test":123};
+json = jsonT.typping(json);
+console.log( json );
+```
+
 **TODO:**
-- [ ] Добавить в npm
-- [ ] Сделать вариант функции без графической обертки
+- [x] Добавить в npm
+- [x] Сделать вариант функции без графической обертки
 - [ ] Сделать возможность загружать JSON по ссылке
 
 json, typisation
