@@ -30,7 +30,7 @@ JSONtyping
 var jsonT = require('json-typping');
 var json = {"test":123};
 json = jsonT.typping(json);
-console.log( json );
+console.log( json ); // {test: 'number'}
 ```
 
 **TODO:**
